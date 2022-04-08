@@ -1,13 +1,3 @@
-<!-- 
-    This represents more than 12 hours of work. I left some commented code in to show the direction I was going in
-    
-    What I have not been able to accomplish
-1. figure out how to leave an alt text for the marketing meeting image
-2. FIXED get rid of the wrap in the p elements. I'm not convinced this is the best solution 
-3. the SEO text in the hero does not navigate like the other lables.
-4. get the verticle navbar bottom to match the bottom of the Social Media Marketing box
-5. search window does not work
--->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -15,13 +5,14 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Horiseon Web-page</title>
+    <title>Horiseon Web-page for marketing search functionality to support business</title>
 </head>
 
 <body>
+    <nav>
     <header class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <!--navbar at top of group meeting picture-->
+        <!--navbar at top of group meeting picture allowing for 3 selections within the page-->
         <div>
             <ul>
                 <li>
@@ -36,6 +27,7 @@
             </ul>
         </div>
     </header>
+</nav>
     <div class="hero"></div>
     <div class="content">
         <div id="search-engine-optimization" class="search-engine-optimization">
@@ -46,38 +38,48 @@
             p {
                 white-space: nowrap;
               }-->
-            <h2>Search Engine Optimization</h2>
-            <p>
-                white-space: nowrap;
-                <!--another attempt to clear up the wrap-->
+              <!--SEO is the first box, contains a paragraph of detail and has a navigation selectioin from the nav bar-->
+            <section>
+              <h2>Search Engine Optimization</h2>
+                <p>
+               
                 The dominance of mobile internet use means that users are searching for the right business as they
                 travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
-                your visibility and <br>find the right customers for your business.
-            </p>
+                your visibility and find the right customers for your business.
+                </p>
+            </section>
         </div>
         <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-left"
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right"
                 alt="Laptop displaying 'REPUTATION' and graphics" />
-            <h2>Online Reputation Management</h2>
-            <p>
+
+                <!--ORM is the second box, contains a paragraph of detail and has a navigation selectioin from the nav bar-->
+            <section>
+                <h2>Online Reputation Management</h2>
+                <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an
                 internet connection to say whatever they want about your business. Online Reputation Management gives
                 you the control over what potential customers see when they search for your business.
-            </p>
+                </p>
+            </section>
         </div>
         <div id="social-media-marketing" class="social-media-marketing">
             <img src="./assets/images/social-media-marketing.jpg" class="float-left"
                 alt="The Team Brings a LOT of ideas and knowledge to your social media potential." />
-            <h2>Social Media Marketing</h2>
-            <p>
+                <!--SMM is the third box, contains a paragraph of detail and has a navigation selectioin from the nav bar-->
+            <section>
+                <h2>Social Media Marketing</h2>
+                <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you
                 determine which platforms are suited to your brand, using analytics to find the right markets and
                 increase your lead generation.
-            </p>
+                </p>
+            </section>
         </div>
     </div>
     <div class="benefits">
         <div class="benefit-lead">
+            <!--Lead Gen is a side box that just displays graphics and short paragraphs about the business side-->
         <h3>Lead Generation</h3>
         <img src="./assets/images/lead-generation.png" alt="Mechanical Image Funneling Down to Money" />
         <p>
@@ -86,7 +88,7 @@
         </p> 
     </div>
 
-    
+    <aside>
     <div class="benefit-brand">
         <h3>Brand Awareness</h3>
         <img src="./assets/images/brand-awareness.png" alt="Icon of a humman with a light bulb head lighting up" />
@@ -110,6 +112,10 @@
             <input type="text" placeholder="Search..">
           </div>-->
     </div>
+    </aside>
+
+<footer>
+    <!--This search tool does not yet work and should be larger to accomodate imapaired users-->
     <div class="footer">
         <h2>Search</h2>
 
@@ -123,6 +129,7 @@
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
     </div>
+</footer>
 </body>
 
 </html>
